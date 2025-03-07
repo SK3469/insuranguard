@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Button from "./Button";
 import { CheckCircle, FileText, Image, MessageSquare, Share2, Smartphone } from "lucide-react";
 import FeatureCard from "./FeatureCard";
@@ -143,7 +144,7 @@ const ClaimsProcess = () => {
               </div>
             </div>
             
-            <Button className="mt-4">Learn More About Claims</Button>
+            <Button className="mt-4" as={Link} to="/protection">Learn More About Claims</Button>
           </div>
         </div>
         

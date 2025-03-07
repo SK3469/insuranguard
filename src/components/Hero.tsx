@@ -1,5 +1,6 @@
 
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import Button from "./Button";
 import { ArrowRight, Shield, Clock, Award } from "lucide-react";
 
@@ -66,7 +67,7 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-wrap items-center gap-4">
-              <Button size="lg" className="group">
+              <Button size="lg" className="group" as={Link} to="/protection">
                 Get Your Quote <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
               <Button variant="outline" size="lg">
@@ -146,7 +147,7 @@ const Hero = () => {
                   </div>
                   
                   <div className="mt-6">
-                    <Button className="w-full">Get Protected Now</Button>
+                    <Button className="w-full" as={Link} to="/protection">Get Protected Now</Button>
                   </div>
                 </div>
               </div>
