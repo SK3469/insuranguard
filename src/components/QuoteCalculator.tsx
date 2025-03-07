@@ -1,8 +1,8 @@
-
 import { useState } from "react";
 import Button from "./Button";
 import { Calculator, CarFront, Check, ChevronDown } from "lucide-react";
 import AnimatedNumber from "./AnimatedNumber";
+import { Link } from "react-router-dom";
 
 type VehicleType = "hatchback" | "sedan" | "suv" | "premium";
 type CoverageType = "basic" | "standard" | "premium";
@@ -69,11 +69,10 @@ const QuoteCalculator = () => {
   const [coverage, setCoverage] = useState<CoverageType>("standard");
   const [showQuote, setShowQuote] = useState(false);
   
-  // Calculate premium based on vehicle and coverage
   const calculatePremium = () => {
     const baseRate = vehicleTypes[vehicle.type].baseRate;
-    const ageMultiplier = Math.max(0.8, 1 - vehicle.age * 0.05); // Older cars get slightly cheaper rates
-    const valueAddition = vehicle.value * 0.0025; // 0.25% of vehicle value
+    const ageMultiplier = Math.max(0.8, 1 - vehicle.age * 0.05);
+    const valueAddition = vehicle.value * 0.0025;
     
     let premium = (baseRate + valueAddition) * ageMultiplier;
     premium *= coverageTypes[coverage].multiplier;
@@ -87,7 +86,6 @@ const QuoteCalculator = () => {
 
   return (
     <section id="quote" className="py-24 relative overflow-hidden">
-      {/* Background decoration */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute -top-40 -left-40 w-96 h-96 rounded-full bg-blue-50 opacity-60 blur-3xl"></div>
         <div className="absolute -bottom-20 right-20 w-80 h-80 rounded-full bg-blue-100 opacity-40 blur-3xl"></div>
@@ -214,7 +212,13 @@ const QuoteCalculator = () => {
                     
                     <div className="mt-4 grid grid-cols-2 gap-3">
                       <Button variant="outline" size="sm">Save Quote</Button>
-                      <Button size="sm">Proceed</Button>
+                      <Button as={Link} to="/protection" size="sm">Proceed</Button>
+                    </div>
+                    
+                    <div className="mt-3 text-center">
+                      <Link to="/reviews" className="text-xs text-blue-600 hover:underline">
+                        See what our customers say about us
+                      </Link>
                     </div>
                   </div>
                 )}
