@@ -57,7 +57,7 @@ const ClaimsProcess = () => {
               <div className="p-6">
                 <div className="flex items-center border-b pb-4 mb-4">
                   <div className="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center mr-4">
-                    <steps[activeStep - 1].icon />
+                    {steps[activeStep - 1].icon}
                   </div>
                   <div>
                     <h3 className="font-medium">Step {activeStep}</h3>
