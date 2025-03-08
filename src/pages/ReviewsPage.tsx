@@ -18,7 +18,6 @@ const ReviewsPage = () => {
           <ReviewCarousel />
         </div>
       </main>
-      <Footer />
     </div>
   );
 };

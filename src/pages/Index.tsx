@@ -8,6 +8,7 @@ import AccidentAssistance from "@/components/AccidentAssistance";
 import Footer from "@/components/Footer";
 import WhatsAppFloater from "@/components/WhatsAppFloater";
 import TelegramFloater from "@/components/TelegramFloater";
+import ReviewsPage from "./ReviewsPage";
 
 const Index = () => {
   useEffect(() => {
@@ -63,6 +64,7 @@ const Index = () => {
       <main className="flex-grow">
         <Hero />
         <QuoteCalculator />
+        <ReviewsPage/>
         <ClaimsProcess />
         <AccidentAssistance />
       </main>

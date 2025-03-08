@@ -49,7 +49,7 @@ const Hero = () => {
         <div className="bg-layer absolute top-1/3 left-1/4 w-64 h-64 rounded-full bg-blue-50 opacity-70 blur-3xl"></div>
       </div>
       
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10 pl-12">
         <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div className="space-y-8 max-w-xl" data-aos="fade-up">
             <div className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-blue-50 text-blue-700">

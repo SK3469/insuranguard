@@ -9,28 +9,28 @@ const blogPosts = [
     id: 1,
     title: "Understanding the New Motor Vehicle Act 2023: What's Changed?",
     excerpt: "The new Motor Vehicle Act brings significant changes to insurance requirements, penalties, and safety standards. Here's what every vehicle owner needs to know.",
-    author: "Aditya Sharma",
-    date: "April 15, 2023",
+    author: "Sunil Kumar",
+    date: "March 1, 2025",
     readTime: "7 min read",
     category: "Legal Updates",
-    imageUrl: "https://images.unsplash.com/photo-1592853598064-a3a5f647fba5?q=80&w=1000&auto=format&fit=crop"
+    imageUrl: "https://cms.zurichkotak.com/uploads/390_Car_57b24e9831.webp"
   },
   {
     id: 2,
     title: "Electric Vehicle Insurance: Special Considerations",
     excerpt: "As electric vehicles become more popular in India, insurance needs are evolving. Learn about the unique coverage requirements for your EV.",
-    author: "Priya Mehta",
-    date: "March 22, 2023",
+    author: "Deepak Bisht",
+    date: "March 2, 2025",
     readTime: "5 min read",
     category: "Electric Vehicles",
-    imageUrl: "https://images.unsplash.com/photo-1593941707882-a5bba13938c7?q=80&w=1000&auto=format&fit=crop"
+    imageUrl: "https://www.bajajallianz.com/content/dam/revampbagic/ev-insurance/images/EVcar.webp"
   },
   {
     id: 3,
     title: "Monsoon Ready: Protecting Your Vehicle During Heavy Rains",
     excerpt: "Monsoon season can wreak havoc on your vehicle. Discover practical tips to prevent water damage and what insurance coverage you need.",
-    author: "Rajesh Kumar",
-    date: "February 10, 2023",
+    author: "Mukesh Kumar",
+    date: "February 10, 2025",
     readTime: "6 min read",
     category: "Seasonal Tips",
     imageUrl: "https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?q=80&w=1000&auto=format&fit=crop"
@@ -39,8 +39,8 @@ const blogPosts = [
     id: 4,
     title: "Zero Depreciation vs. Standard Comprehensive Insurance",
     excerpt: "Is paying extra for zero depreciation coverage worth it? We break down the cost-benefit analysis for different vehicle ages and usage patterns.",
-    author: "Neha Singh",
-    date: "January 5, 2023",
+    author: "Babli Kumari",
+    date: "January 5, 2025",
     readTime: "8 min read",
     category: "Insurance Guide",
     imageUrl: "https://images.unsplash.com/photo-1529369623266-f5264b696110?q=80&w=1000&auto=format&fit=crop"
@@ -49,8 +49,8 @@ const blogPosts = [
     id: 5,
     title: "How Telematics is Changing Motor Insurance in India",
     excerpt: "Usage-based insurance and telematics devices are revolutionizing how premiums are calculated. Learn how good driving can now save you money.",
-    author: "Vikram Patil",
-    date: "December 18, 2022",
+    author: "Praveen Kumar",
+    date: "December 18, 2024",
     readTime: "6 min read",
     category: "Technology",
     imageUrl: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1000&auto=format&fit=crop"
@@ -60,7 +60,7 @@ const blogPosts = [
     title: "Top 10 Myths About Motor Insurance Debunked",
     excerpt: "From 'red cars cost more to insure' to 'insurance covers all drivers' - we debunk common misconceptions about motor insurance in India.",
     author: "Anjali Desai",
-    date: "November 3, 2022",
+    date: "November 3, 2024",
     readTime: "9 min read",
     category: "Myth Busters",
     imageUrl: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=1000&auto=format&fit=crop"
@@ -74,7 +74,7 @@ const categories = [
 
 const BlogPage = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen ">
       <NavBar />
       <main className="flex-grow py-16">
         <div className="container mx-auto px-4">
@@ -106,9 +106,9 @@ const BlogPage = () => {
                 </p>
                 <div className="flex items-center text-gray-300 text-sm">
                   <User className="h-4 w-4 mr-1" />
-                  <span className="mr-4">Vikram Rathore</span>
+                  <span className="mr-4">Sunil Kumar</span>
                   <CalendarIcon className="h-4 w-4 mr-1" />
-                  <span className="mr-4">May 1, 2023</span>
+                  <span className="mr-4">March 5, 2025</span>
                   <Clock className="h-4 w-4 mr-1" />
                   <span>10 min read</span>
                 </div>
@@ -134,9 +134,9 @@ const BlogPage = () => {
             </div>
             
             {/* Blog Posts Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
               {blogPosts.map(post => (
-                <div key={post.id} className="border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all group">
+                <div key={post.id} className="border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all group cursor-pointer">
                   <div className="relative h-48 overflow-hidden">
                     <img 
                       src={post.imageUrl} 

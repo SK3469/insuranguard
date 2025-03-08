@@ -1,11 +1,11 @@
 
 import Button from "./Button";
-import { Ambulance, Car, MapPin, MessageSquare, Phone, Shield, Clock } from "lucide-react";
+import { Ambulance, Car, MapPin, MessageSquare, Phone, Clock } from "lucide-react";
 import AnimatedNumber from "./AnimatedNumber";
 
 const AccidentAssistance = () => {
   return (
-    <section id="assistance" className="py-24 relative overflow-hidden">
+    <section id="assistance" className="py-16 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-0 right-0 h-1/2 bg-gradient-to-b from-blue-50 to-transparent"></div>
         <div className="absolute -top-20 right-20 w-64 h-64 rounded-full bg-red-50 opacity-40 blur-3xl"></div>
@@ -16,7 +16,7 @@ const AccidentAssistance = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-red-50 text-red-700 mb-4">
             <Ambulance className="h-4 w-4 mr-2" />
-            24/7 Emergency Assistance
+            24/7 Emergency Assistance with our channel partner's
           </div>
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">Real-Time Accident Assistance</h2>
           <p className="text-muted-foreground text-lg">
@@ -25,7 +25,7 @@ const AccidentAssistance = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <div className="relative mb-8">
               <div className="absolute -top-4 -left-4 h-24 w-24 bg-red-100 rounded-full blur-2xl opacity-60"></div>
@@ -37,16 +37,16 @@ const AccidentAssistance = () => {
                   <div className="bg-white/20 rounded-full p-2 mr-4">
                     <Phone className="h-6 w-6" />
                   </div>
-                  <h3 className="text-xl font-semibold">Emergency Hotline</h3>
+                  <h3 className="text-xl font-semibold">Insurance about to End! or Stuck anywhere!</h3>
                 </div>
                 
                 <p className="mb-6 text-white/80">
                   One call connects you to our 24/7 emergency response team. We coordinate everything
-                  from roadside assistance to medical help.
+                  Online.
                 </p>
                 
-                <div className="font-mono text-2xl font-bold tracking-wider mb-2">
-                  1800-VAHAN-HELP
+                <div className="font-mono text-3xl font-bold tracking-wider mb-2">
+                  +91-7011217296 | +91-9013488512
                 </div>
                 
                 <Button className="bg-white text-red-600 hover:bg-white/90">
@@ -64,10 +64,8 @@ const AccidentAssistance = () => {
                     <span className="text-sm font-medium text-primary">01</span>
                   </div>
                   <div>
-                    <h4 className="font-medium mb-1">Immediate Location Tracking</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Our system automatically detects your location to send help exactly where you need it.
-                    </p>
+                    <h4 className="font-medium mb-1">Rapid Re-Activation Online</h4>
+                    <p className="text-sm text-muted-foreground">Seamless policy renewal to ensure continuous protection.</p>
                   </div>
                 </div>
                 
@@ -76,7 +74,7 @@ const AccidentAssistance = () => {
                     <span className="text-sm font-medium text-primary">02</span>
                   </div>
                   <div>
-                    <h4 className="font-medium mb-1">Dispatched Assistance</h4>
+                    <h4 className="font-medium mb-1">Dispatched Policy On-Hand</h4>
                     <p className="text-sm text-muted-foreground">
                       Based on the situation, we deploy appropriate vehicles and personnel to help you.
                     </p>
@@ -88,9 +86,9 @@ const AccidentAssistance = () => {
                     <span className="text-sm font-medium text-primary">03</span>
                   </div>
                   <div>
-                    <h4 className="font-medium mb-1">Claim Pre-Processing</h4>
+                    <h4 className="font-medium mb-1">Fast Claim Pre-Processing</h4>
                     <p className="text-sm text-muted-foreground">
-                      We begin processing your claim while help is en route, saving you time later.
+                      We begin processing your claim while help is en-route, saving you time later.
                     </p>
                   </div>
                 </div>
@@ -102,7 +100,7 @@ const AccidentAssistance = () => {
                   <div>
                     <h4 className="font-medium mb-1">Follow-up Support</h4>
                     <p className="text-sm text-muted-foreground">
-                      We stay with you through the entire process until you're safely back on the road.
+                      We stay with you through the entire process until you're safely back on Records.
                     </p>
                   </div>
                 </div>
@@ -198,7 +196,7 @@ const AccidentAssistance = () => {
           </div>
         </div>
         
-        <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-2xl p-8 md:p-12 shadow-soft overflow-hidden relative">
+        {/* <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-2xl p-8 md:p-12 shadow-soft overflow-hidden relative">
           <div className="absolute top-0 right-0 -mt-16 -mr-16 h-64 w-64 bg-white/10 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-0 -mb-20 -ml-20 h-80 w-80 bg-white/10 rounded-full blur-3xl"></div>
           
@@ -221,7 +219,7 @@ const AccidentAssistance = () => {
               </Button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

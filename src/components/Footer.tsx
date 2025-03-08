@@ -95,34 +95,24 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-3">
               <li>
-                <a href="tel:1800-VAHAN-HELP" className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors">
+                <p className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors">
                   <Phone className="h-4 w-4 mr-2" />
-                  1800-VAHAN-HELP
-                </a>
+                  +91-9013488512 | +91-7011217296
+                </p>
               </li>
               <li>
-                <a href="mailto:support@vahankavach.in" className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors">
-                  <Mail className="h-4 w-4 mr-2" />
-                  support@vahankavach.in
-                </a>
+                <p  className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Mail className="h-4 w-4 mr-2" />
+                mypolicyquery@outlook.com
+                </p>
+             
               </li>
             </ul>
             
             <div className="mt-6">
-              <h4 className="text-sm font-medium mb-2">Download our App</h4>
+              <h4 className="text-sm font-medium mb-2">Download our App <span className="text-xs text-red-600">comming soon!</span></h4>
               <div className="flex space-x-3">
                 <a href="#" className="bg-black text-white rounded-lg px-3 py-2 text-xs flex items-center space-x-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M17.707 10.708L16.586 9.587L13 13.172L13 2L11 2L11 13.172L7.414 9.587L6.293 10.708L12 16.415L17.707 10.708Z" />
-                    <path d="M18 18L18 20L6 20L6 18L4 18L4 22L20 22L20 18L18 18Z" />
-                  </svg>
-                  <span>App Store</span>
-                </a>
-                <a href="#" className="bg-black text-white rounded-lg px-3 py-2 text-xs flex items-center space-x-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M17.707 10.708L16.586 9.587L13 13.172L13 2L11 2L11 13.172L7.414 9.587L6.293 10.708L12 16.415L17.707 10.708Z" />
-                    <path d="M18 18L18 20L6 20L6 18L4 18L4 22L20 22L20 18L18 18Z" />
-                  </svg>
                   <span>Play Store</span>
                 </a>
               </div>
@@ -131,11 +121,11 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-200 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-cols gap-2 items-center">
             <p className="text-xs text-muted-foreground mb-4 md:mb-0">
-              © {new Date().getFullYear()} VahanSurakshaKavach. All rights reserved. IRDAI Registration No: VSK12345.
-            </p>
-            
+              © {new Date().getFullYear()} VahanSurakshaKavach | All rights reserved.
+            </p >
+            <p  className="text-xs text-muted-foreground mb-4 md:mb-0" >crafted & desgined by SunilMernStack</p>
             <div className="flex space-x-4">
               <Link to="/privacy-policy" className="text-xs text-muted-foreground hover:text-primary transition-colors">
                 Privacy Policy

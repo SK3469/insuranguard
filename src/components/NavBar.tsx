@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Button from "./Button";
 import { Menu, X, ShieldCheck } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,6 +44,7 @@ const NavBar = () => {
             <a href="#assistance" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
               Accident Assistance
             </a>
+            <Link to = "/resources/blog" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"> Blog</Link>
           </nav>
           
           <div className="hidden md:flex items-center space-x-4">

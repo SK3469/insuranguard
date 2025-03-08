@@ -8,35 +8,35 @@ import Button from "./Button";
 const reviews = [
   {
     id: 1,
-    name: "Priya Sharma",
+    name: "Sunil Kumar",
     location: "Delhi",
     rating: 5,
     review: "The claim process was incredibly smooth. My car was repaired within a week after the accident, and I didn't have to follow up even once. The team was proactive in keeping me updated.",
     vehicleType: "Hyundai Creta",
-    imageUrl: "https://i.pravatar.cc/150?img=32"
+    imageUrl: "https://www.freepik.com/free-photo/full-shot-students-preparing-exam_31194720.htm#from_element=category_discover&from_view=category"
   },
   {
     id: 2,
-    name: "Rajesh Kumar",
-    location: "Mumbai",
+    name: "Deepak Bisht",
+    location: "Delhi",
     rating: 5,
     review: "Switching to VahanSurakshaKavach was the best decision. Their premium rates are competitive, and the coverage is extensive. The digital policy management makes everything so convenient.",
-    vehicleType: "Honda City",
+    vehicleType: "Honda Activa-5G",
     imageUrl: "https://i.pravatar.cc/150?img=60"
   },
   {
     id: 3,
-    name: "Ananya Patel",
-    location: "Ahmedabad",
+    name: "Diwan Singh",
+    location: "UK",
     rating: 4,
     review: "I was involved in a minor accident, and their roadside assistance team reached within 30 minutes. The entire claims process was handled digitally, and I received the settlement within 3 days.",
-    vehicleType: "Tata Nexon",
+    vehicleType: "Hero Ducter-750cc",
     imageUrl: "https://i.pravatar.cc/150?img=5"
   },
   {
     id: 4,
-    name: "Vikram Singh",
-    location: "Chandigarh",
+    name: "Praveen Kumar",
+    location: "Delhi",
     rating: 5,
     review: "The customer service is exceptional. When I had questions about my policy, their team explained everything clearly. The mobile app is user-friendly and makes tracking claims very simple.",
     vehicleType: "Maruti Swift",
@@ -44,20 +44,20 @@ const reviews = [
   },
   {
     id: 5,
-    name: "Meera Reddy",
+    name: "Mukesh Atthaya",
     location: "Bangalore",
     rating: 5,
     review: "I've been with VahanSurakshaKavach for two years now, and their service has been consistently excellent. When I needed to update my policy after buying a new car, the process was seamless.",
-    vehicleType: "Toyota Fortuner",
+    vehicleType: "Honda Shine",
     imageUrl: "https://i.pravatar.cc/150?img=25"
   },
   {
     id: 6,
-    name: "Arjun Desai",
-    location: "Pune",
+    name: "Babli Kumari",
+    location: "Patna",
     rating: 4,
     review: "The comprehensive coverage gives me peace of mind. Their accident assistance team was professional and helped me through a stressful situation after my car was damaged in a flood.",
-    vehicleType: "Kia Seltos",
+    vehicleType: "Audi Q-7",
     imageUrl: "https://i.pravatar.cc/150?img=67"
   }
 ];
@@ -153,12 +153,8 @@ const ReviewCarousel = () => {
                 >
                   <div className="mb-4 flex items-start">
                     <div className="flex-shrink-0 mr-4">
-                      <div className="h-12 w-12 rounded-full overflow-hidden">
-                        <img 
-                          src={review.imageUrl} 
-                          alt={review.name} 
-                          className="h-full w-full object-cover"
-                        />
+                      <div className="h-16 w-16 rounded-full shadow-hard bg-black text-white overflow-hidden px-1">
+                      <h1 className="text-xs h-10 w-full text-center my-4">{review.name}</h1>
                       </div>
                     </div>
                     <div>
