@@ -1,5 +1,6 @@
 
 import { Facebook, Instagram, Linkedin, Mail, Phone, Twitter } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -32,29 +33,29 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Products</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/products/comprehensive-insurance" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Comprehensive Insurance
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/products/third-party-liability" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Third-Party Liability
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/products/own-damage-cover" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Own Damage Cover
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/products/add-on-coverages" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Add-On Coverages
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/products/commercial-vehicle-insurance" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Commercial Vehicle Insurance
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -63,29 +64,29 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/resources/insurance-guide" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Insurance Guide
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/resources/claim-process" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Claim Process
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/resources/faq" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   FAQ
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/resources/network-garages" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Network Garages
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/resources/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Blog
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -94,13 +95,13 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="tel:1800-VAHAN-HELP" className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors">
                   <Phone className="h-4 w-4 mr-2" />
                   1800-VAHAN-HELP
                 </a>
               </li>
               <li>
-                <a href="#" className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="mailto:support@vahankavach.in" className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors">
                   <Mail className="h-4 w-4 mr-2" />
                   support@vahankavach.in
                 </a>
@@ -136,15 +137,15 @@ const Footer = () => {
             </p>
             
             <div className="flex space-x-4">
-              <a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/privacy-policy" className="text-xs text-muted-foreground hover:text-primary transition-colors">
                 Privacy Policy
-              </a>
-              <a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">
+              </Link>
+              <Link to="/terms-of-service" className="text-xs text-muted-foreground hover:text-primary transition-colors">
                 Terms of Service
-              </a>
-              <a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">
+              </Link>
+              <Link to="/disclaimer" className="text-xs text-muted-foreground hover:text-primary transition-colors">
                 Disclaimer
-              </a>
+              </Link>
             </div>
           </div>
         </div>
