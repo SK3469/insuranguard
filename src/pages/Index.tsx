@@ -6,6 +6,7 @@ import QuoteCalculator from "@/components/QuoteCalculator";
 import ClaimsProcess from "@/components/ClaimsProcess";
 import AccidentAssistance from "@/components/AccidentAssistance";
 import Footer from "@/components/Footer";
+import WhatsAppFloater from "@/components/WhatsAppFloater";
 
 const Index = () => {
   useEffect(() => {
@@ -65,6 +66,7 @@ const Index = () => {
         <AccidentAssistance />
       </main>
       <Footer />
+      <WhatsAppFloater />
     </div>
   );
 };
