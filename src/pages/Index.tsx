@@ -7,6 +7,7 @@ import ClaimsProcess from "@/components/ClaimsProcess";
 import AccidentAssistance from "@/components/AccidentAssistance";
 import Footer from "@/components/Footer";
 import WhatsAppFloater from "@/components/WhatsAppFloater";
+import TelegramFloater from "@/components/TelegramFloater";
 
 const Index = () => {
   useEffect(() => {
@@ -67,6 +68,7 @@ const Index = () => {
       </main>
       <Footer />
       <WhatsAppFloater />
+      <TelegramFloater />
     </div>
   );
 };
