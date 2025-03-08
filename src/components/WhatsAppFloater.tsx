@@ -2,7 +2,7 @@
 import { MessageCircle } from "lucide-react";
 
 const WhatsAppFloater = () => {
-  const phoneNumber = "9013488512";
+  const phoneNumber = "7011217296";
   const message = encodeURIComponent("Hello! I'd like to get more information about vehicle insurance.");
 
   const handleWhatsAppClick = () => {
